@@ -1,1657 +1,686 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Kolawole's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/vendor/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/feature.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olaniyi Muiez Kolawole · Frontend Engineer</title>
+  <meta name="description" content="Olaniyi Muiez Kolawole is a Lagos-based Frontend Engineer building fast, scalable web apps with React, Next.js, Vue, Nuxt and TypeScript across fintech, education, civic tech and logistics.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://olaniyi-kolawole-portfolio.onrender.com/">
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b0d12">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Olaniyi Muiez Kolawole · Frontend Engineer">
+  <meta property="og:description" content="Lead Frontend Engineer building responsive, scalable web apps with React, Next.js, Vue and Nuxt.">
+  <meta property="og:url" content="https://olaniyi-kolawole-portfolio.onrender.com/">
+  <meta property="og:image" content="https://olaniyi-kolawole-portfolio.onrender.com/assets/images/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Apply saved / system theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="template-color-1 spybody" data-spy="scroll" data-bs-target=".navbar-example2" data-offset="150">
-    <!-- header home -->
-    <!-- Start Header -->
-    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
-        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
-            <!-- Start Header Left -->
-            <div class="col-lg-2 col-6">
-                <div class="header-left">
-                    <div class="logo">
-                        <a href="#home">
-                            <img src="assets/images/slider/portfolio-image-4.png" alt="logo" style="border-radius: 50%; max-width: 26%;">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Header Left -->
-            <!-- Start Header Center -->
-            <div class="col-lg-10 col-6">
-                <div class="header-center">
-                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
-                        <!-- Start Mainmanu Nav -->
-                        <ul class="primary-menu nav nav-pills">
-                            <li class="nav-item current"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a></li> -->
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
-                        </ul>
-                        <!-- End Mainmanu Nav -->
-                    </nav>
-                    <!-- Start Header Right  -->
-                    <div class="header-right">
-                        <div data-bs-toggle="modal" data-bs-target="#contactForm">
-                        <a class="rn-btn" href="#"><span>CONTACT ME</span></a>
-                    </div>
-                        <div class="hamberger-menu d-block d-xl-none">
-                            <i id="menuBtn" class="feather-menu humberger-menu"></i>
-                        </div>
+<body id="top">
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5M12 15V3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><path d="M2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path class="fill" d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93zm-1.29 19.49h2.04L6.49 3.24H4.3l13.31 17.4z"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+  </svg>
 
-                        <div class="close-menu d-block">
-                            <span class="closeTrigger">
-                                <i data-feather="x"></i>
-                            </span>
-                        </div>                    
-                    </div>
-                    <!-- End Header Right  -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-                </div>
-            </div>
-            <!-- End Header Center -->
-        </div>
-    </header>
-    <!-- End Header Area -->
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Olaniyi Muiez Kolawole, home">
+        <span class="brand-mark">OK</span>
+        <span class="brand-name">Kolawole</span>
+      </a>
 
-    <!-- Start Popup Mobile Menu  -->
-    <div class="popup-mobile-menu">
-        <div class="inner">
-            <div class="menu-top">
-                <div class="menu-header">
-                    <a class="logo" href="index.html">
-                        <img src="assets/images/slider/portfolio-image.jpg" alt="Personal Portfolio" style="border-radius: 50%; max-width: 40%;">
-                    </a>
-                    <div class="close-button">
-                        <button class="close-menu-activation close"><i data-feather="x"></i></button>
-                    </div>
-                </div>
-                <p class="discription">This is the personal portfolio of Olaniyi Muiez Kolawole.
-                </p>
-            </div>
-            <div class="content">
-                <ul class="primary-menu nav nav-pills onepagenav">
-                    <li class="nav-item current"><a class="nav-link smoth-animation" href="#home">Home</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a></li> -->
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
-                </ul>
-                <!-- social share area -->
-                <div class="social-share-style-1 mt--40">
-                    <span class="title">Connect with me</span>
-                    <div class="social-icone-wrapper">
-                        <ul class="social-share d-flex liststyle">
-                            <li class="facebook"><a target="_blank" href="https://www.linkedin.com/in/muiez-olaniyi-800b7736a"><i data-feather="linkedin"></i></a>
-                            </li>
-                            <li class="instagram"><a target="_blank" href="https://github.com/Kolawole26"><i data-feather="github"></i></a>
-                            </li>
-                            <li class="linkedin"><a target="_blank" href="https://twitter.com/kolenzy360?t=3lxVVuP0vrQJfZ5_mQ6UkA&s=09"><i data-feather="twitter"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- end -->
-            </div>
-        </div>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cv" href="assets/cv/Olaniyi-Muiez-Kolawole-CV.pdf" download>
+          <svg class="icon"><use href="#i-download"/></svg> Download CV
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+          <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+        </button>
+        <a class="btn btn-primary header-cv" href="assets/cv/Olaniyi-Muiez-Kolawole-CV.pdf" download>
+          <svg class="icon"><use href="#i-download"/></svg> CV
+        </a>
+        <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon icon-open"><use href="#i-menu"/></svg>
+          <svg class="icon icon-close"><use href="#i-close"/></svg>
+        </button>
+      </div>
     </div>
-    <!-- End Popup Mobile Menu  -->
+  </header>
 
-    <main class="main-page-wrapper">
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-blob blob-2" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow intro" style="--d:0"><span class="status-dot"></span> Open to new opportunities</p>
+          <h1 class="hero-title intro" style="--d:1">
+            Hi, I'm <span class="accent-text">Olaniyi Muiez Kolawole</span>
+          </h1>
+          <p class="hero-role intro" style="--d:2">
+            <span class="typed" data-words="Lead Frontend Engineer|React &amp; Next.js Developer|Vue &amp; Nuxt Developer|Team Lead &amp; Mentor">Lead Frontend Engineer</span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero-lead intro" style="--d:3">
+            I build responsive, scalable and high-performance web applications with React, Next.js, Vue, Nuxt and TypeScript,
+            and I lead teams that ship them on time.
+          </p>
+          <div class="hero-ctas intro" style="--d:4">
+            <a class="btn btn-primary btn-lg" href="#projects">View projects <svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost btn-lg" href="assets/cv/Olaniyi-Muiez-Kolawole-CV.pdf" download>
+              <svg class="icon"><use href="#i-download"/></svg> Download CV
+            </a>
+          </div>
+          <ul class="hero-social intro" style="--d:5" aria-label="Social links">
+            <li><a class="icon-btn" href="https://github.com/Kolawole26" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.linkedin.com/in/muiez-olaniyi-800b7736a" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a></li>
+            <li><a class="icon-btn" href="https://twitter.com/kolenzy360" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg class="icon"><use href="#i-x"/></svg></a></li>
+            <li><a class="icon-btn" href="mailto:olaniyimuiez@gmail.com" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
 
-        <!-- Start Slider Area -->
-        <div id="home" class="rn-slide-area">
-            <div class="slide slider-style-3">
-                <div class="container">
-                    <div class="row slider-wrapper">
-                        <div class="order-2 order-xl-1 col-lg-12 col-xl-5 mt_lg--50 mt_md--50 mt_sm--50">
-                            <div class="slider-info">
-                                <div class="row">
-                                    <div class="col-xl-12 col-lg-12 col-12">
-                                        <div class="user-info-top">
-                                            <div class="user-info-header">
-                                                <div class="user">
-                                                    <i data-feather="user"></i>
-                                                </div>
-                                                <h2 class="title">
-                                                    Hi, I’m <span>Kolawole</span>
-                                                </h2>
-                                                <p class="disc">Frontend developer</p>
-                                            </div>
-                                            <div class="user-info-footer">
-                                                <div class="info">
-                                                    <i data-feather="file"></i>
-                                                    <span>Frontend developer</span>
-                                                </div>
-                                                <div class="info">
-                                                    <i data-feather="mail"></i>
-                                                    <span>olaniyimuiez@gmail.com</span>
-                                                </div>
-                                                <div class="info">
-                                                    <i data-feather="map-pin"></i>
-                                                    <span>Lagos State, Nigeria</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+        <div class="hero-visual intro" style="--d:2">
+          <div class="hero-ring" aria-hidden="true"></div>
+          <div class="hero-photo">
+            <img src="assets/images/profile.jpg" alt="Portrait of Olaniyi Muiez Kolawole in a cream suit" width="600" height="720" fetchpriority="high">
+          </div>
+          <div class="hero-badge">
+            <svg class="icon"><use href="#i-pin"/></svg> Ikeja, Lagos, Nigeria
+          </div>
+          <span class="float-badge fb-1" aria-hidden="true"><img src="assets/images/skills/react.svg" alt="" width="28" height="28"></span>
+          <span class="float-badge fb-2" aria-hidden="true"><img src="assets/images/skills/nextjs.svg" alt="" width="28" height="28"></span>
+          <span class="float-badge fb-3" aria-hidden="true"><img src="assets/images/skills/vuejs.svg" alt="" width="28" height="28"></span>
+          <span class="float-badge fb-4" aria-hidden="true"><img src="assets/images/skills/typescript.svg" alt="" width="28" height="28"></span>
+        </div>
+      </div>
 
-                                    <div class="col-xl-12 col-lg-12 col-12">
-                                        <div class="user-info-bottom">
-                                            <span>Download my curriculum vitae: </span>
-                                            <div class="button-wrapper d-flex">
-                                                <a class="rn-btn mr--30" href="https://drive.google.com/file/d/1nA7DHXf1dFDdwja3uOyI_YMhyfPbW11H/view?usp=sharing" download="Olaniyi_Kolawole_Resume" target="_blank"><span>View CV</span></a>
-                                                <div data-bs-toggle="modal" data-bs-target="#contactForm">
-                                                    <a class="rn-btn"><span>CONTACT ME</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+      <div class="container">
+        <dl class="stats reveal">
+          <div class="stat"><dt>Years of experience</dt><dd><span data-count="4">4</span>+</dd></div>
+          <div class="stat"><dt>Live web applications</dt><dd><span data-count="10">10</span>+</dd></div>
+          <div class="stat"><dt>Sectors served</dt><dd><span data-count="4">4</span></dd></div>
+          <div class="stat"><dt>Companies &amp; clients</dt><dd><span data-count="6">6</span></dd></div>
+        </dl>
+      </div>
+    </section>
 
-                                </div>
-                            </div>
-                        </div>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <header class="section-head reveal">
+          <p class="section-kicker">About</p>
+          <h2 class="section-title">Frontend engineer, team lead, mentor.</h2>
+        </header>
+        <div class="about-body reveal">
+          <p>
+            I'm a result-driven Frontend Engineer working across <strong>JavaScript, TypeScript, React, Vue, Next.js, Nuxt.js and Angular</strong>.
+            I craft responsive interfaces with HTML5, CSS3, Sass, Tailwind CSS and Bootstrap, plus UI libraries like Quasar and Ionic,
+            and I manage application state and data with Redux, Vuex, Pinia, Strapi, REST APIs and WebSockets.
+          </p>
+          <p>
+            Since 2023 I've led frontend development at Special Man Global Solution: planning and delegating work, reviewing code,
+            and mentoring interns into productive developers. I've shipped <strong>10+ live web applications</strong> across fintech, education,
+            social media and logistics, used by thousands of active users.
+          </p>
+          <p>
+            I thrive in Agile teams and care about clear communication, attention to detail and clean, maintainable code.
+          </p>
+          <div class="now-card">
+            <span class="now-label">Currently</span>
+            <span>Lead Frontend Engineer at <strong>Special Man Global Solution LTD</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                        <div class="order-1 order-xl-2 col-lg-12 col-xl-7">
-                            <div class="background-image-area">
-                                <div class="thumbnail-image">
-                                    <img src="assets/images/slider/portfolio-image-4.png" alt="Personal Portfolio" >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="section-kicker">Skills</p>
+          <h2 class="section-title">Tools I build with</h2>
+        </header>
+
+        <ul class="core-skills stagger" aria-label="Core technologies">
+          <li><img src="assets/images/skills/html.svg" alt="" width="40" height="40"><span>HTML5</span></li>
+          <li><img src="assets/images/skills/css.svg" alt="" width="40" height="40"><span>CSS3</span></li>
+          <li><img src="assets/images/skills/javascript.svg" alt="" width="40" height="40"><span>JavaScript</span></li>
+          <li><img src="assets/images/skills/typescript.svg" alt="" width="40" height="40"><span>TypeScript</span></li>
+          <li><img src="assets/images/skills/react.svg" alt="" width="40" height="40"><span>React</span></li>
+          <li><img src="assets/images/skills/nextjs.svg" alt="" width="40" height="40"><span>Next.js</span></li>
+          <li><img src="assets/images/skills/vuejs.svg" alt="" width="40" height="40"><span>Vue.js</span></li>
+          <li><img src="assets/images/skills/nuxt-dot-js.svg" alt="" width="40" height="40"><span>Nuxt.js</span></li>
+          <li><img src="assets/images/skills/angular.svg" alt="" width="40" height="40"><span>Angular</span></li>
+          <li><img src="assets/images/skills/tailwind-css.svg" alt="" width="40" height="40"><span>Tailwind CSS</span></li>
+        </ul>
+
+        <div class="skill-groups">
+          <div class="skill-group reveal">
+            <h3>Frameworks</h3>
+            <ul class="chips"><li>React</li><li>Next.js</li><li>Vue.js</li><li>Nuxt.js</li><li>Angular</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>UI &amp; styling</h3>
+            <ul class="chips"><li>Tailwind CSS</li><li>Sass</li><li>Bootstrap</li><li>Quasar</li><li>Ionic</li><li>WordPress</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>State &amp; data</h3>
+            <ul class="chips"><li>Redux</li><li>Vuex</li><li>Pinia</li><li>Strapi</li><li>REST APIs</li><li>WebSockets</li><li>jQuery</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Tooling</h3>
+            <ul class="chips"><li>Git</li><li>GitHub</li><li>GitLab</li><li>Postman</li><li>Swagger</li><li>VS Code</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Collaboration</h3>
+            <ul class="chips"><li>Agile / Scrum</li><li>Slack</li><li>Microsoft Teams</li><li>Zoom</li><li>Google Meet</li><li>Zoho</li><li>Trello</li><li>OpenProject</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="section-kicker">Experience</p>
+          <h2 class="section-title">Where I've worked</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">04/2023 – Present</span>
+              <span class="timeline-loc">Lagos, Nigeria</span>
             </div>
-        </div>
-        <!-- End Slider Area -->
-
-                <!-- Start Contact Area -->
-                <div class="rn-contact-area rn-section-gap section-separator" id="contacts">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="section-title text-center">
-                                    <span class="subtitle">Skills</span>
-                                    <h2 class="title">Professional Skills</h2>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="row row-cols-2 row-cols-lg-5 g-5 mt--50 mt_md--40 mt_sm--40 mt-contact-sm px-5">
-                            <div class="col">
-                                    <img class=" w-25" src="assets/images/skills/html.svg" alt="slide">
-                                    <p class="">Html</p>
-                            </div>
-                            <div class="col">
-                                    <img class=" w-25" src="assets/images/skills/css.svg" alt="slide">
-                                    <p>CSS</p>
-                            </div>
-                            <div class="col">
-                                    <img class=" w-25" src="assets/images/skills/javascript.svg" alt="slide">
-                                    <p>JAVASCRIPT</p>
-                            </div>
-                            <div class="col">
-                                    <img class=" w-25" src="assets/images/skills/vuejs.svg" alt="slide">
-                                    <p>VUEJS</p>
-                            </div>
-                            <div class="col">
-                                    <img class=" w-25" src="assets/images/skills/nuxt-dot-js.svg" alt="slide">
-                                    <p>NuxtJs</p>
-                            </div>
-                            <div class="col">
-                                    <img class=" w-25" src="assets/images/skills/react.svg" alt="slide">
-                                    <p>REACT</p>
-                            </div>
-                            <div class="col">
-                                    <img class=" w-25" src="assets/images/skills/angular.svg" alt="slide">
-                                    <p>ANGULAR</p>
-                            </div>
-                            <div class="col">
-                                    <img class=" w-25" src="assets/images/skills/typescript.svg" alt="slide">
-                                    <p>TYPESCRIPT</p>
-                            </div>
-                            <div class="col">
-                                    <img class=" w-25" src="assets/images/skills/tailwind-css.svg" alt="slide">
-                                    <p>TailwindCSS</p>
-                            </div>
-                            <div class="col">
-                                    <img class=" w-25" src="assets/images/skills/bootstrap.svg" alt="slide">
-                                    <p>BOOTSTRAP</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                        <!-- Start Portfolio Area -->
-        <div id="portfolio" class="rn-portfolio-area portfolio-style-three rn-section-gap section-separator pb-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
-                            <span class="subtitle">Visit my portfolio and reach out</span>
-                            <h2 class="title">My Portfolio</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt--25 mt_md--5 mt_sm--5">
-                    <div class="col-lg-12">
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="portfolio-wrapper portfolio-slick-activation slick-arrow-style-one rn-slick-dot-style">
-
-                            
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#takcomsmodal">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/Takcoms.png" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Investment and trading App</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Takcoms Synergy<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#snappymodal">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/SnappyPayWebsite.png" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Fintech / Digital Financial Services App</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">SnappyPay Website<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#civicmodal">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/Talkam.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Civic Tech app</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Talkam<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#eventmodal">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/Mycaptures.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Event app</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">MyCaptures.xyz<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#financialmodal">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/Fave.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Financial app</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Fave<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#insurancemodal">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/Scudo.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Insurance app</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Scudo<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#ecommercemodal">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/I-scholar.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Academic Application</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">I-scholar<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/Insure-admin.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Insurance APP</a>
-                                                </div>
-                                                <!-- <div class="meta">
-                                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                                        650</span>
-                                                </div> -->
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Insure-Admin<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-                            
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/SmartDudes.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Quiz App</a>
-                                                </div>
-                                                <!-- <div class="meta">
-                                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                                        650</span>
-                                                </div> -->
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Smart Dudes<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/Portfolio.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Portfolio</a>
-                                                </div>
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">My Portfolio<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#portfolioModal">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/Pizzeria.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Food App</a>
-                                                </div>
-                                                <!-- <div class="meta">
-                                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                                        650</span>
-                                                </div> -->
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Simple pizza app<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-                            
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/Lightning.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">FootWare App</a>
-                                                </div>
-                                                <!-- <div class="meta">
-                                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                                        650</span>
-                                                </div> -->
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Lightning Footware<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="rn-portfolio-slick">
-                                <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="assets/images/portfolio/Insure.PNG" alt="Personal Portfolio Images">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="category-info">
-                                                <div class="category-list">
-                                                    <a href="javascript:void(0)">Landing Page</a>
-                                                </div>
-                                                <!-- <div class="meta">
-                                                    <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                                        650</span>
-                                                </div> -->
-                                            </div>
-                                            <h4 class="title"><a href="javascript:void(0)">Insure Landing Page<i
-                                                        class="feather-arrow-up-right"></i></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Portfolio  -->
-
-                        </div>
-                    </div>
-                </div>
+            <div class="timeline-card">
+              <h3>Lead Frontend Engineer</h3>
+              <p class="timeline-company">Special Man Global Solution LTD</p>
+              <ul>
+                <li>Lead frontend development: planning, assigning and delegating tasks, tracking progress, reviewing code and ensuring timely delivery of high-quality features.</li>
+                <li>Mentored and trained interns in HTML, CSS, JavaScript, React.js and Vue.js through the Special Man Solution Internship Programme (2023–2025).</li>
+                <li>Developed and maintained 10+ live web applications across fintech, education, social media and logistics, serving thousands of active users.</li>
+                <li>Partnered with designers, backend engineers and product stakeholders to turn business requirements into intuitive, maintainable frontends.</li>
+              </ul>
             </div>
-        </div>
-        <!-- End portfolio Area -->
-        
+          </li>
 
-        <!-- Start Resume Area -->
-        <div class="rn-resume-area rn-section-gap section-separator" id="resume">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
-                            <span class="subtitle">Over 2 Year of Experience</span>
-                            <h2 class="title">My Resume</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt--45">
-                    <div class="col-lg-12">
-                        <ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">education & experience</a>
-                            </li>
-                        </ul>
-
-                        <!-- Start Tab Content Wrapper  -->
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="rn-nav-content tab-content" id="myTabContents">
-
-                            <!-- Start Single Tab  -->
-                            <div class="tab-pane show active fade single-tab-area" id="education" role="tabpanel" aria-labelledby="education-tab">
-                                <div class="personal-experience-inner mt--40">
-                                    <div class="row">
-                                        <!-- Start Skill List Area  -->
-                                        <div class="col-lg-6 col-md-12 col-12">
-                                            <div class="content">
-                                                <span class="subtitle">2013 - 2017</span>
-                                                <h4 class="maintitle">Education and Certification</h4>
-                                                <div class="experience-list">
-
-                                                    <!-- Start Single List  -->
-                                                    <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>BSc. Industrial Chemistry</h4>
-                                                                    <span>Achievers University Owo, Ondo State (2013 - 2017)</span>
-                                                                </div>
-                                                                <!-- <div class="date-of-time">
-                                                                    <span>4.30/5</span>
-                                                                </div> -->
-                                                            </div>
-                                                            <p class="description">I attended the Achievers University, studied Industrial Chemistry for a period of 4 years.</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single List  -->
-
-                                                    <!-- Start Single List  -->
-                                                    <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>Sololearn</h4>
-                                                                    <span>Web Development</span>
-                                                                </div>
-                                                                <!-- <div class="date-of-time">
-                                                                    <span>4.50/5</span>
-                                                                </div> -->
-                                                            </div>
-                                                            <p class="description">Studied HTML, CSS, Javascript, Bootstrap.</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single List  -->
-
-                                                    <!-- Start Single List  -->
-                                                    <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>TheStartUpIntern</h4>
-                                                                    <span>Frontend Developer Refinery  Program (2021)</span>
-                                                                </div>
-                                                              <div class="date-of-time">
-                                                                    <span>4.80/5</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="description"> Studied HTML, CSS, Javascript, React, Next Js, Tailwind Css, Bootstrap, Ant Design, Redux, GIT and GitHub, Responsive web design, NPM.</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single List  -->
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Skill List Area  -->
-
-                                        <!-- Start Skill List Area 2nd  -->
-                                        <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
-                                            <div class="content">
-                                                <span class="subtitle">2021 - 2022</span>
-                                                <h4 class="maintitle">Job Experience</h4>
-                                                <div class="experience-list">
-                                                <!-- Start Single List  -->
-                                                <div class="resume-single-list">
-                                                    <div class="inner">
-                                                        <div class="heading">
-                                                            <div class="title">
-                                                                <h4>Special Man Global Solution</h4>
-                                                                <span>Frontend Developer Intern (April 2022 - March 2023)</span>
-                                                            </div>
-                                                            <!-- <div class="date-of-time">
-                                                                <span>4.70/5</span>
-                                                            </div> -->
-                                                        </div>
-                                                        <p class="description">Learnt Vuejs, Nuxtjs, Quasar, Ionic, Vuex, Pinia, etc.
-                                                            Worked alongside Special Man Global Solution team and collaborated on multiple projects.</p>
-                                                    </div>
-                                                </div>
-                                                    <!-- End Single List  -->
-
-                                                    
-                                                    <!-- Start Single List  -->
-                                                    <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>Special Man Global Solution</h4>
-                                                                    <span>Frontend Developer (April 2023 - Present)</span>
-                                                                </div>
-                                                                <!-- <div class="date-of-time">
-                                                                    <span>4.95/5</span>
-                                                                </div> -->
-                                                            </div>
-                                                            <p class="description">Assisting in the development and training of interns in HTML, CSS and Javascript, Vuejs, Tailwind Css in the
-                                                                SpecialManSolution Internship 2023 programme.</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single List  -->
-                                                    
-
-                                                    <!-- Start Single List  -->
-                                                    <!-- <div class="resume-single-list">
-                                                        <div class="inner">
-                                                            <div class="heading">
-                                                                <div class="title">
-                                                                    <h4>SOE Consultancy</h4>
-                                                                    <span>Web Developer (Feb 2022 - August 2022)</span>
-                                                                </div>
-                                                                 <div class="date-of-time">
-                                                                    <span>5.00/5</span>
-                                                                </div>
-                                                            </div>
-                                                            <p class="description">Developing Frontend interfaces for businesses and clients. Worked with a team of content writers, graphic designers.
-                                                                Designing and developing Responsive web Pages, working with softwares like Wix and Squarespace.</p>
-                                                        </div>
-                                                    </div> -->
-                                                    <!-- End Single List  -->
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Skill List Area  -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Tab  -->
-
-
-                            <!-- End Single Tab  -->
-                        </div>
-                    </div>
-                </div>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">01/2026 – 05/2026</span>
+              <span class="timeline-loc">Albania · Contract</span>
             </div>
-        </div>
-        <!-- End Resume Area -->
-
-
-        <!-- Start Contact Area -->
-        <div class="rn-contact-area rn-section-gap section-separator" id="contacts">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <span class="subtitle">Contact</span>
-                            <h2 class="title">Connect With Me</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
-                    <div class="">
-                        <div class="contact-about-area">
-                            <div class="thumbnail">
-                                <img src="assets/images/contact/contact1.png" alt="contact-img">
-                            </div>
-                            <div class="title-area">
-                                <h4 class="title">Olaniyi Muiez Kolawole</h4>
-                                <span>Frontend Web Developer</span>
-                            </div>
-                            <div class="description">
-                                <p>I am available for Jobs. Connect with me via email and call.
-                                </p>
-                                <span class="phone">Phone: <a href="tel:08162021449">+2348162021449</a></span>
-                                <span class="mail">Email: <a href="mailto:olaniyimuiez@gmail.com">olaniyimuiez@gmail.com</a></span>
-                            </div>
-                            <div class="social-area">
-                                <div class="name">CONNECT WITH ME</div>
-                                <div class="social-icone">
-                                    <a target="_blank" href="https://www.linkedin.com/in/muiez-olaniyi-800b7736a"><i data-feather="linkedin"></i></a>
-                                    <a target="_blank" href="https://github.com/Kolawole26"><i data-feather="github"></i></a>
-                                    <a target="_blank" href="https://twitter.com/kolenzy360?t=3lxVVuP0vrQJfZ5_mQ6UkA&s=09"><i data-feather="twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div data-aos-delay="600" class="col-lg-7 contact-input">
-                        <div class="contact-form-wrapper">
-                            <div class="introduce">
-
-                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST" action="https://vue-http-learning-b7e81-default-rtdb.firebaseio.com/portfolio.json">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="contact-name">Your Name</label>
-                                            <input class="form-control form-control-lg" name="contact-name" id="name" type="text" >
-                                        </div>
-                                        
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="contact-phone">Phone Number</label>
-                                            <input class="form-control" name="contact-phone" id="phone" type="text" >
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="contact-email">Email</label>
-                                            <input class="form-control form-control-sm" id="email" name="contact-email" type="email" >
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="subject">subject</label>
-                                            <input class="form-control form-control-sm" id="contact-subject" name="subject" type="text" >
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="contact-message">Your Message</label>
-                                            <textarea name="contact-message" id="message" cols="30" rows="10" placeholder="Please leave a message...." ></textarea>
-                                        </div>
-                                    </div>
-
-                                    <p id="alertPrompt"></p>            
-                                    <div class="col-lg-12">
-                                        <button name="submit" type="submit" id="submit" class="rn-btn">
-                                            <span>SEND MESSAGE</span>
-                                            <i data-feather="arrow-right"></i>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
+            <div class="timeline-card">
+              <h3>Frontend Engineer</h3>
+              <p class="timeline-company">RexChats</p>
+              <ul>
+                <li>Built and maintained an AI-powered chatbot platform with Next.js and React for automated conversations and customer support across web and mobile.</li>
+                <li>Integrated the chatbot with social media DMs so businesses could manage messages from multiple channels in one system.</li>
+                <li>Led a team of 3 engineers and built reusable UI components for chatbot management, analytics dashboards and conversation workflows.</li>
+              </ul>
             </div>
-        </div>
-        <!-- End Contact Area -->
+          </li>
 
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/Pizzeria.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Food App</span>SIMPLE Pizza App
-                                    </h3>
-                                    <p class="mb--30">This app was built using Reactjs.</p>
-                                    <p>It is a simple Pizza app.
-                                        This is merely a task to Learn React and Redux for state management</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://thesetupintern-react-website-kola.netlify.app/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">03/2025 – 05/2025</span>
+              <span class="timeline-loc">Toronto, Canada · Contract</span>
             </div>
-        </div>
-        <!-- End Modal Portfolio area -->
-
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/Lightning.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Footware App</span>Lightning Footware Landing Page
-                                    </h3>
-                                    <p class="mb--30">This app is a Landing Page built using Nextjs, Tailwind css.</p>
-                                    <p>This is merely a task to Learn Nextjs and Tailwind css</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://thestartupintern-final-2.netlify.app/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+            <div class="timeline-card">
+              <h3>Frontend Web Developer</h3>
+              <p class="timeline-company">Takcoms Synergy</p>
+              <ul>
+                <li>Implemented a new investment and trading web application for users.</li>
+                <li>Consumed service APIs, implemented admin authentication and optimised the JavaScript codebase for performance.</li>
+                <li>Improved the main website's SEO with tooling and meta tags, increasing organic visits by 100%.</li>
+              </ul>
             </div>
-        </div>
-        <!-- End Modal Portfolio area -->
+          </li>
 
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/Insure-admin-2.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Insurance app</span>Insure-Admin
-                                    </h3>
-                                    <p class="mb--30">This app serves as a productivity tool for individuals/Insurance Company to improve workflow, productivity and collaboration.</p>
-                                    <p>This app was built using NuxtJs, Pinia, Tailwind Css.
-                                       Admins keeps records, add, update and delete tasks.
-                                    </p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://insure-admin.onrender.com" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">08/2024 – 11/2024</span>
+              <span class="timeline-loc">California, US · Contract</span>
             </div>
-        </div>
-        <!-- End Modal Portfolio area -->
-
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/SmartDudes.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>A Simple Quiz App</span>Smart Dudes
-                                    </h3>
-                                    <p class="mb--30">This is a quiz app with categories of questions to select from.</p>
-                                    <p>I consumed the open Quiz API and used it to build this simple Quiz app with vuejs, Vuex for state mangement.
-                                         It is a simple Quiz app aimed solely for Fun</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://smart-dudes.netlify.app/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+            <div class="timeline-card">
+              <h3>Frontend Web Developer</h3>
+              <p class="timeline-company">SkyHubs Digital</p>
+              <ul>
+                <li>Developed responsive web and mobile interfaces for multiple client projects.</li>
+                <li>Coordinated a team of 3 engineers and mentored juniors through code reviews and one-on-ones.</li>
+                <li>Built reusable, scalable React components to streamline development and keep design consistent.</li>
+              </ul>
             </div>
-        </div>
-        <!-- End Modal Portfolio area -->
+          </li>
 
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/Portfolio.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>My Portfolio</span>Portfolio APP
-                                    </h3>
-                                    <p class="mb--30">This app displays My Current Portfolio.</p>
-                                    <p>It was built using HTML, CSS and Javascript.</p>
-                                    <div class="button-group mt--20">
-                                        <a href="https://olaniyi-kolawole-portfolio.onrender.com" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">01/2024 – 04/2024</span>
+              <span class="timeline-loc">Nottingham, UK · Contract</span>
             </div>
-        </div>
-        <!-- End Modal Portfolio area -->
-
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="ecommercemodal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/I-scholar.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>I-scholar Initiative</span>Academic Application
-                                    </h3>
-                                    <p class="mb--30">An academic application portal website for scholarship.</p>
-                                    <p>It was built using Nuxtjs, Pinia for state management, Tailwind Css.
-                                        Users can Apply for Scholarship.</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://portal.ischolarinitiative.org/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+            <div class="timeline-card">
+              <h3>Frontend Web Developer</h3>
+              <p class="timeline-company">CloudTech</p>
+              <ul>
+                <li>Spearheaded development of web and mobile-based projects, leading a team of 3 developers.</li>
+                <li>Mentored junior developers with regular code reviews and created custom React components to speed up development.</li>
+              </ul>
             </div>
-        </div>
-        <!-- End Modal Portfolio area -->
+          </li>
 
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/Insure.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Insurance App</span>Insure Landing Page
-                                    </h3>
-                                    <p class="mb--30">This app is a Landing Page built using HTML and CSS.</p>
-                                    <p>This is merely a task to Learn css</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://challenge7-kolawole.netlify.app/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">07/2023 – 10/2023</span>
+              <span class="timeline-loc">Abuja, Nigeria</span>
             </div>
-        </div>
-        <!-- End Modal Portfolio area -->
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="takcomsmodal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/Takcom-2.png" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Takcoms Synergy</span>Investment and trading App
-                                    </h3>
-                                    <p class="mb--30">This app is built using Vue, Nuxt, Pinia for state management, Tailwind Css.</p>
-                                    <p>
-                                    Takcoms Synergy is a Investment and trading app for Indices, Commodities, Stocks, Currencies, and Cryptocurrency with expert strategies and advanced tools.</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://takcomsinvestment.com/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+            <div class="timeline-card">
+              <h3>Frontend Web Developer</h3>
+              <p class="timeline-company">Spotzz</p>
+              <ul>
+                <li>Developed web dashboards for merchants to interact with sellers.</li>
+                <li>Consumed service APIs and implemented authentication for different user types.</li>
+              </ul>
             </div>
-        </div>
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="snappymodal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
+          </li>
 
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/SnappyPayWebsite2.png" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>SnappyPay</span>Fintech / Digital Financial Services App
-                                    </h3>
-                                    <p class="mb--30">This app is built using React, Nextjs, Redux for state management, Tailwind Css.</p>
-                                    <p>
-                                    SnappyPay is a fintech platform that enables users to buy gift cards, pay bills, purchase airtime and data, and access virtual dollar cards with ease and security.</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://snappypay.ng/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">04/2022 – 03/2023</span>
+              <span class="timeline-loc">Lagos, Nigeria</span>
             </div>
-        </div>
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="civicmodal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/Talkam2.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Talkam</span>Civic Tech App
-                                    </h3>
-                                    <p class="mb--30">This app is built using Vue, Nuxt, Pinia for state management, Tailwind Css.</p>
-                                    <p>
-                                        TALKAM is a civic tech initiative dedicated to addressing human rights abuses, promoting and protecting human rights and stimulating reportage and actions among CITIZENS, AGENCIES AND ORGANIZATIONS.</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://talkam.app/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+            <div class="timeline-card">
+              <h3>Frontend Developer Intern</h3>
+              <p class="timeline-company">Special Man Global Solution LTD</p>
+              <ul>
+                <li>Learned responsive web design, Vue.js, Nuxt.js, Quasar, Ionic, design principles and JavaScript.</li>
+                <li>Worked alongside the engineering team and learned front-end object-oriented programming.</li>
+              </ul>
             </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="section-kicker">Projects</p>
+          <h2 class="section-title">Selected work</h2>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button type="button" class="chip-btn" data-filter="all" aria-pressed="true">All <span class="count"></span></button>
+          <button type="button" class="chip-btn" data-filter="fintech" aria-pressed="false">Fintech <span class="count"></span></button>
+          <button type="button" class="chip-btn" data-filter="civic" aria-pressed="false">Civic &amp; Education <span class="count"></span></button>
+          <button type="button" class="chip-btn" data-filter="insurance" aria-pressed="false">Insurance <span class="count"></span></button>
+          <button type="button" class="chip-btn" data-filter="product" aria-pressed="false">Products <span class="count"></span></button>
+          <button type="button" class="chip-btn" data-filter="learning" aria-pressed="false">Learning <span class="count"></span></button>
         </div>
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="eventmodal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
 
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/Mycaptures2.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>MyCaptures.xyz</span>Event App
-                                    </h3>
-                                    <p class="mb--30">This app is built using Vue, Nuxt, Pinia for state management, Tailwind Css.</p>
-                                    <p>
-                                        An event app for sharing videos, photos, and audio wishes, connecting users worldwide.</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://mycaptures.xyz/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+        <div class="project-grid">
+          <article class="project reveal" data-category="fintech"
+            data-title="Takcoms Synergy" data-label="Investment &amp; Trading"
+            data-image="assets/images/portfolio/Takcom-2.png"
+            data-stack="Vue, Nuxt, Pinia, Tailwind CSS"
+            data-url="https://gosynergyinvest.com/"
+            data-desc="Takcoms Synergy, now GoSynergy Invest, is an investment and trading platform backed by over 10 years of professional trading experience. It trades indices, commodities, stocks, currencies and cryptocurrency, and offers managed ETF portfolios, fixed-return plans and professional trade-signal services on platforms such as MQL5 and SignalStart.">
+            <button type="button" class="project-media" aria-label="View details for Takcoms Synergy">
+              <img src="assets/images/portfolio/Takcoms.png" alt="Takcoms Synergy homepage" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Investment &amp; Trading</p>
+              <h3>Takcoms Synergy</h3>
+              <ul class="tags"><li>Vue</li><li>Nuxt</li><li>Pinia</li><li>Tailwind</li></ul>
             </div>
-        </div>
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="financialmodal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
+          </article>
 
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/Fave-dashboard.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Fave</span>Financial App
-                                    </h3>
-                                    <p class="mb--30">This app is built using Vue, Nuxt, Pinia for state management, Tailwind Css.</p>
-                                    <p>
-Fave financial app is a digital tool that helps individuals and businesses manage money, track expenses, set budgets, and achieve financial goals using smartphones, tablets, or computers.</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://app.faveaccount.com/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+          <article class="project reveal" data-category="fintech"
+            data-title="SnappyPay" data-label="Fintech / Digital Financial Services"
+            data-image="assets/images/portfolio/SnappyPayWebsite2.png"
+            data-stack="React, Next.js, Redux, Tailwind CSS"
+            data-url="https://snappypay.ng/"
+            data-desc="SnappyPay is Nigeria&#39;s hub for gift cards and digital payments. Users can buy and sell gift cards, get virtual dollar cards, top up airtime and data, convert airtime to cash, and pay electricity, cable TV, internet and school fees, with 24/7 live-chat support.">
+            <button type="button" class="project-media" aria-label="View details for SnappyPay">
+              <img src="assets/images/portfolio/SnappyPayWebsite.png" alt="SnappyPay website" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Fintech</p>
+              <h3>SnappyPay</h3>
+              <ul class="tags"><li>React</li><li>Next.js</li><li>Redux</li><li>Tailwind</li></ul>
             </div>
-        </div>
-        <!-- End Modal Portfolio area -->
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="insurancemodal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
+          </article>
 
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/Scudo-dashboard.PNG" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Scudo</span>Insurance App
-                                    </h3>
-                                    <p class="mb--30">This app is built using Vue, Nuxt, socket, Pinia for state management, Tailwind Css.</p>
-                                    <p>Scudo insurance app is a digital tool that offers easy access to insurance services, allowing users to manage policies, file claims, and stay informed via smartphones or computers.</p>
-                                    <div class="button-group mt--20">
-                                        <!-- <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a> -->
-                                        <a href="https://dashboard.scudoapp.co/" target="_blank" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
+          <article class="project reveal" data-category="civic"
+            data-title="Talkam" data-label="Civic Tech"
+            data-image="assets/images/portfolio/Talkam2.PNG"
+            data-stack="Vue, Nuxt, Pinia, Tailwind CSS"
+            data-url="https://talkam.app/"
+            data-desc="Talkam is a civic tech platform that uses technology to challenge human rights violations. Citizens can report abuses, follow cases on the Case Tracker, join discussions in the TALK Room, take human rights courses and find human rights organisations in a directory.">
+            <button type="button" class="project-media" aria-label="View details for Talkam">
+              <img src="assets/images/portfolio/Talkam.PNG" alt="Talkam website" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Civic Tech</p>
+              <h3>Talkam</h3>
+              <ul class="tags"><li>Vue</li><li>Nuxt</li><li>Pinia</li><li>Tailwind</li></ul>
             </div>
-        </div>
-        <!-- End Modal Portfolio area -->
+          </article>
 
-        <!-- Modal contact form Body area Start -->
-        <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">                            
-                                <div class="">
-                                    <div class="contact-about-area">
-                                        <div class="thumbnail">
-                                            <img src="assets/images/contact/contact1.png" alt="contact-img">
-                                        </div>
-                                        <div class="title-area">
-                                            <h4 class="title">Olaniyi Muiez Kolawole</h4>
-                                            <span>Frontend Web Developer</span>
-                                        </div>
-                                        <div class="description">
-                                            <p>I am available for Jobs. Connect with me via email and call.
-                                            </p>
-                                            <span class="phone">Phone: <a href="tel:08162021449">+2348162021449</a></span>
-                                            <span class="mail">Email: <a href="mailto:olaniyimuiez@gmail.com">olaniyimuiez@gmail.com</a></span>
-                                        </div>
-                                        <div class="social-area">
-                                            <div class="name">CONNECT WITH ME</div>
-                                            <div class="social-icone">
-                                                <a target="_blank" href="https://www.linkedin.com/in/muiez-olaniyi-800b7736a"><i data-feather="linkedin"></i></a>
-                                                <a target="_blank" href="https://github.com/Kolawole26"><i data-feather="github"></i></a>
-                                                <a target="_blank" href="https://twitter.com/kolenzy360?t=3lxVVuP0vrQJfZ5_mQ6UkA&s=09"><i data-feather="twitter"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-
-                            
-                                <!-- <div data-aos-delay="600" class="col-lg-7 contact-input">
-                                    <div class="contact-form-wrapper">
-                                        <div class="introduce">
-            
-                                            <form class="rnt-contact-form rwt-dynamic-form row" id="form" method="POST" action="https://vue-http-learning-b7e81-default-rtdb.firebaseio.com/portfolio.json">
-                                               
-                                                <div class="col-lg-6">
-                                                    <div class="form-group">
-                                                        <label for="contact-name">Your Name</label>
-                                                        <input class="form-control form-control-lg" name="contact-name" id="contact-name" type="text" >
-                                                    </div>
-                                                    
-                                                </div>
-            
-                                                <div class="col-lg-6">
-                                                    <div class="form-group">
-                                                        <label for="contact-phone">Phone Number</label>
-                                                        <input class="form-control" name="contact-phone" id="contact-phone" type="text" >
-                                                    </div>
-                                                </div>
-            
-                                                <div class="col-lg-12">
-                                                    <div class="form-group">
-                                                        <label for="contact-email">Email</label>
-                                                        <input class="form-control form-control-sm" id="contact-email" name="contact-email" type="email" >
-                                                    </div>
-                                                </div>
-            
-                                                <div class="col-lg-12">
-                                                    <div class="form-group">
-                                                        <label for="subject">subject</label>
-                                                        <input class="form-control form-control-sm" id="subject" name="subject" type="text" >
-                                                    </div>
-                                                </div>
-            
-                                                <div class="col-lg-12">
-                                                    <div class="form-group">
-                                                        <label for="contact-message">Your Message</label>
-                                                        <textarea name="contact-message" id="contact-message" cols="30" rows="10" placeholder="Please leave a message...." ></textarea>
-                                                    </div>
-                                                </div>
-
-                                                <p id="alert"></p>            
-                                                <div class="col-lg-12">
-                                                    <button name="submit" type="submit" id="submitBtn" class="rn-btn">
-                                                        <span>SEND MESSAGE</span>
-                                                        <i data-feather="arrow-right"></i>
-                                                    </button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <article class="project reveal" data-category="civic"
+            data-title="StartPointAfrica" data-label="Philanthropy &amp; Development"
+            data-image="assets/images/portfolio/StartPointAfrica-2.png"
+            data-stack="React, Next.js, Redux"
+            data-url="https://startpointafrica.org/"
+            data-desc="StartPoint, an initiative of the African Philanthropy Forum, bridges the gap between donors and credible African-led and local organisations. It connects Africa&#39;s development sector through a searchable directory of organisations across focus areas such as gender equality, human rights, humanitarian aid, youth and poverty eradication.">
+            <button type="button" class="project-media" aria-label="View details for StartPointAfrica">
+              <img src="assets/images/portfolio/StartPointAfrica.png" alt="StartPointAfrica homepage" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Philanthropy &amp; Development</p>
+              <h3>StartPointAfrica</h3>
+              <ul class="tags"><li>React</li><li>Next.js</li><li>Redux</li></ul>
             </div>
-        </div>
-        <!-- End Modal contact form area -->
-       
-        <!-- Back to  top Start -->
-        <div class="backto-top">
-            <div>
-                <i data-feather="arrow-up"></i>
-            </div>
-        </div>
-        <!-- Back to top end -->
-       
-    </main>
+          </article>
 
-    <!--  footer area Start -->
-    <div id="footer" class="rn-footer-area footer-style-2 rn-section-gapTop section-separator">
-        <div class="container pb--80 pb_sm--40 plr_sm--20">
-            <div class="row">
-                <div class="col-xl-3 col-12 col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="logo-thumbnail">
-                        <a href="#"><img src="assets/images/slider/portfolio-image-4.png" alt="logo-image" style="border-radius: 100%; max-width: 40%;"></a>
-                    </div>
-                    <div class="social-icone-wrapper">
-                        <ul class="social-share d-flex liststyle">
-                            <li class="facebook"><a target="_blank" href="https://www.linkedin.com/in/muiez-olaniyi-800b7736a"><i data-feather="linkedin"></i></a>
-                            </li>
-                            <li class="instagram"><a target="_blank" href="https://github.com/Kolawole26"><i data-feather="github"></i></a>
-                            </li>
-                            <li class="linkedin"><a target="_blank" href="https://twitter.com/kolenzy360?t=3lxVVuP0vrQJfZ5_mQ6UkA&s=09"><i data-feather="twitter"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sl-3 col-12 mt_sm--20 col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="menu-wrapper">
-                        This is a personal portfolio website of Olaniyi Muiez Kolawole showing all my work and progress currently
-                    </div>
-                </div>
-                <div class="col-sl-3 col-12 mt_sm--20 col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="menu-wrapper">
-                        <div class="menu-title">
-                            <h6>Contact</h6>
-                        </div>
-                        <ul class="menu-footer">
-                            <li><a href="tel:08162021449"><i class="fas fa-phone"></i>  Call me</a></li>
-                            <li><a href="mailto:olaniyimuiez@gmail.com"> Send a mail</a></li>
-                            <li>Lagos, Nigeria</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sl-3 col-12 mt_sm--20 col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="menu-wrapper">
-                        <div class="menu-title">
-                            <h6>Navigation</h6>
-                        </div>
-                        <ul class="menu-footer">
-                            <li><a href="#home">Home</a></li>
-                            <!-- <li><a href="#experiences">Experience</a></li>
-                            <li><a href="#educations">Education</a></li> -->
-                            <li><a href="#resume">Resume</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                        </ul>
-                    </div>
-                </div>
+          <article class="project reveal" data-category="civic"
+            data-title="I-Scholar Initiative" data-label="Education"
+            data-image="assets/images/portfolio/I-scholar.PNG"
+            data-stack="Nuxt, Pinia, Tailwind CSS"
+            data-url="https://ischolarinitiative.org/"
+            data-desc="The application portal for i-Scholar Initiative, a non-profit that prepares self-driven young African students for graduate study abroad. Through the portal, students apply for fully funded scholarships at world-class universities and access mentorship, admissions guidance and test-prep support.">
+            <button type="button" class="project-media" aria-label="View details for I-Scholar Initiative">
+              <img src="assets/images/portfolio/I-scholar.PNG" alt="I-Scholar portal" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Education</p>
+              <h3>I-Scholar Initiative</h3>
+              <ul class="tags"><li>Nuxt</li><li>Pinia</li><li>Tailwind</li></ul>
             </div>
+          </article>
+
+          <article class="project reveal" data-category="fintech"
+            data-title="Fave" data-label="Accounting &amp; Finance"
+            data-image="assets/images/portfolio/Fave-dashboard.PNG"
+            data-stack="Vue, Nuxt, Pinia, Tailwind CSS"
+            data-url="https://app.faveaccount.com/"
+            data-desc="Fave is an accounting and personal finance app that helps individuals and businesses manage money, track expenses, set budgets and reach their financial goals on any device.">
+            <button type="button" class="project-media" aria-label="View details for Fave">
+              <img src="assets/images/portfolio/Fave.PNG" alt="Fave app" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Accounting &amp; Finance</p>
+              <h3>Fave</h3>
+              <ul class="tags"><li>Vue</li><li>Nuxt</li><li>Pinia</li><li>Tailwind</li></ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="insurance"
+            data-title="Scudo" data-label="Insurance"
+            data-image="assets/images/portfolio/Scudo-dashboard.PNG"
+            data-stack="Vue, Nuxt, WebSockets, Pinia, Tailwind CSS"
+            data-url="https://scudoapp.co/"
+            data-desc="Scudo is an insurance platform where users find, compare and manage cover from leading insurers. Users can file claims in a few clicks and chat in real time with providers, and developers get an insurance API. The dashboard uses WebSockets for live updates.">
+            <button type="button" class="project-media" aria-label="View details for Scudo">
+              <img src="assets/images/portfolio/Scudo.PNG" alt="Scudo dashboard" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Insurance</p>
+              <h3>Scudo</h3>
+              <ul class="tags"><li>Nuxt</li><li>WebSockets</li><li>Pinia</li><li>Tailwind</li></ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="product"
+            data-title="MyCaptures" data-label="Events"
+            data-image="assets/images/portfolio/Mycaptures2.PNG"
+            data-stack="Vue, Nuxt, Pinia, Tailwind CSS"
+            data-url="https://mycaptures.xyz/"
+            data-desc="MyCaptures lets event hosts see their event from the audience&#39;s point of view. Hosts create an event and share its code, and guests send photos, videos and recorded audio wishes straight to the host from anywhere in the world.">
+            <button type="button" class="project-media" aria-label="View details for MyCaptures">
+              <img src="assets/images/portfolio/Mycaptures.PNG" alt="MyCaptures website" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Events</p>
+              <h3>MyCaptures</h3>
+              <ul class="tags"><li>Vue</li><li>Nuxt</li><li>Pinia</li><li>Tailwind</li></ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="insurance"
+            data-title="Insure Admin" data-label="Insurance Productivity"
+            data-image="assets/images/portfolio/Insure-admin-2.PNG"
+            data-stack="Nuxt, Pinia, Tailwind CSS"
+            data-url="https://insure-admin.onrender.com"
+            data-desc="An internal admin console for the Scudo insurance platform. It helps insurance teams improve workflow and collaboration, with admins keeping records and creating, updating and deleting tasks.">
+            <button type="button" class="project-media" aria-label="View details for Insure Admin">
+              <img src="assets/images/portfolio/Insure-admin.PNG" alt="Insure Admin dashboard" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Insurance Productivity</p>
+              <h3>Insure Admin</h3>
+              <ul class="tags"><li>Nuxt</li><li>Pinia</li><li>Tailwind</li></ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="learning"
+            data-title="Smart Dudes" data-label="Quiz App"
+            data-image="assets/images/portfolio/SmartDudes.PNG"
+            data-stack="Vue, Vuex, Open Trivia API"
+            data-url="https://smart-dudes.netlify.app/"
+            data-desc="A fun quiz app with categories of questions to choose from, built by consuming an open quiz API with Vue and Vuex for state management.">
+            <button type="button" class="project-media" aria-label="View details for Smart Dudes">
+              <img src="assets/images/portfolio/SmartDudes.PNG" alt="Smart Dudes quiz app" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Quiz App</p>
+              <h3>Smart Dudes</h3>
+              <ul class="tags"><li>Vue</li><li>Vuex</li><li>REST API</li></ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="learning"
+            data-title="Pizzeria" data-label="Food Ordering"
+            data-image="assets/images/portfolio/Pizzeria.PNG"
+            data-stack="React, Redux"
+            data-url="https://thesetupintern-react-website-kola.netlify.app/"
+            data-desc="A simple pizza ordering app built to learn React and Redux for state management.">
+            <button type="button" class="project-media" aria-label="View details for Pizzeria">
+              <img src="assets/images/portfolio/Pizzeria.PNG" alt="Pizzeria app" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Food Ordering</p>
+              <h3>Pizzeria</h3>
+              <ul class="tags"><li>React</li><li>Redux</li></ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="learning"
+            data-title="Lightning Footwear" data-label="Landing Page"
+            data-image="assets/images/portfolio/Lightning.PNG"
+            data-stack="Next.js, Tailwind CSS"
+            data-url="https://thestartupintern-final-2.netlify.app/"
+            data-desc="A product landing page built to learn Next.js and Tailwind CSS.">
+            <button type="button" class="project-media" aria-label="View details for Lightning Footwear">
+              <img src="assets/images/portfolio/Lightning.PNG" alt="Lightning Footwear landing page" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Landing Page</p>
+              <h3>Lightning Footwear</h3>
+              <ul class="tags"><li>Next.js</li><li>Tailwind</li></ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="learning"
+            data-title="Insure Landing Page" data-label="Landing Page"
+            data-image="assets/images/portfolio/Insure.PNG"
+            data-stack="HTML, CSS"
+            data-url="https://challenge7-kolawole.netlify.app/"
+            data-desc="A responsive landing page built with plain HTML and CSS to sharpen layout skills.">
+            <button type="button" class="project-media" aria-label="View details for Insure Landing Page">
+              <img src="assets/images/portfolio/Insure.PNG" alt="Insure landing page" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Landing Page</p>
+              <h3>Insure Landing Page</h3>
+              <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="learning"
+            data-title="Portfolio v1" data-label="Personal Site"
+            data-image="assets/images/portfolio/Portfolio.PNG"
+            data-stack="HTML, CSS, JavaScript"
+            data-url=""
+            data-desc="The first version of this portfolio, built with HTML, CSS and JavaScript.">
+            <button type="button" class="project-media" aria-label="View details for Portfolio v1">
+              <img src="assets/images/portfolio/Portfolio.PNG" alt="Previous portfolio design" loading="lazy" width="640" height="300">
+            </button>
+            <div class="project-body">
+              <p class="project-label">Personal Site</p>
+              <h3>Portfolio v1</h3>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            </div>
+          </article>
         </div>
-        <div class="copyright text-center ptb--40 section-separator">
-            <p class="description">© 2022. Made with love by Kolawole</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="section-kicker">Education</p>
+          <h2 class="section-title">Learning &amp; certifications</h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="card edu-card reveal">
+            <svg class="icon card-icon"><use href="#i-book"/></svg>
+            <p class="edu-date">2021 – 2022 · Lagos, Nigeria</p>
+            <h3>Web Development</h3>
+            <p class="edu-school">TheStartUpIntern Refinery Programme</p>
+            <ul class="tags"><li>React</li><li>Next.js</li><li>Redux</li><li>Tailwind</li><li>Bootstrap</li><li>Ant Design</li></ul>
+          </article>
+          <article class="card edu-card reveal">
+            <svg class="icon card-icon"><use href="#i-book"/></svg>
+            <p class="edu-date">09/2013 – 11/2017 · Ondo, Nigeria</p>
+            <h3>B.Sc. Industrial Chemistry</h3>
+            <p class="edu-school">Achievers University, Owo</p>
+          </article>
         </div>
+
+        <h3 class="subhead reveal">Certificates</h3>
+        <ul class="cert-list">
+          <li class="card cert reveal"><svg class="icon card-icon"><use href="#i-award"/></svg><div><strong>GDPR &amp; NDPR</strong><span>Coursera</span></div></li>
+          <li class="card cert reveal"><svg class="icon card-icon"><use href="#i-award"/></svg><div><strong>NIST Cybersecurity Framework &amp; OWASP Top 10</strong><span>Coursera</span></div></li>
+          <li class="card cert reveal"><svg class="icon card-icon"><use href="#i-award"/></svg><div><strong>Scrum Fundamentals Certified (SFC)</strong><span>SCRUMstudy</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="section-kicker">Contact</p>
+          <h2 class="section-title">Let's build something great.</h2>
+          <p class="contact-lead">I'm open to full-time roles, contracts and freelance projects. The fastest way to reach me is email.</p>
+          <a class="btn btn-primary btn-lg" href="mailto:olaniyimuiez@gmail.com">
+            <svg class="icon"><use href="#i-mail"/></svg> olaniyimuiez@gmail.com
+          </a>
+          <ul class="contact-list">
+            <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+2348162021449">+234 816 202 1449</a></li>
+            <li><svg class="icon"><use href="#i-pin"/></svg><span>Ikeja, Lagos, Nigeria</span></li>
+          </ul>
+          <ul class="hero-social center" aria-label="Social links">
+            <li><a class="icon-btn" href="https://github.com/Kolawole26" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.linkedin.com/in/muiez-olaniyi-800b7736a" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a></li>
+            <li><a class="icon-btn" href="https://twitter.com/kolenzy360" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg class="icon"><use href="#i-x"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Olaniyi Muiez Kolawole. Built by hand with HTML, CSS &amp; JavaScript.</p>
+      <a href="#top" class="back-top">Back to top ↑</a>
     </div>
-    <!--  footer area end -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/vendor/modernizer.min.js"></script>
-    <script src="assets/js/vendor/feather.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.js"></script>
-    <script src="assets/js/vendor/text-type.js"></script>
-    <script src="assets/js/vendor/wow.js"></script>
-    <script src="assets/js/vendor/aos.js"></script>
-    <script src="assets/js/vendor/particles.js"></script>
-    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/main.js"></script> 
+  </footer>
+
+  <!-- Project modal -->
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <button type="button" class="icon-btn modal-close" aria-label="Close">
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+      <div class="modal-media"></div>
+      <div class="modal-body">
+        <p class="project-label" id="modal-label"></p>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <p class="modal-stack"><strong>Stack:</strong> <span id="modal-stack"></span></p>
+        <a class="btn btn-primary" id="modal-link" href="#" target="_blank" rel="noopener">
+          Visit site <svg class="icon"><use href="#i-external"/></svg>
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
